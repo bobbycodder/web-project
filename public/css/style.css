@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comfortaa", cursive;
+  /* background-image:"https://source.unsplash.com/WLUHO9A_xik/1600x900"; */
+  /* background-image:"https://source.unsplash.com/random "; */
+}
+
+/* background-image:"https://source.unsplash.com/WLUHO9A_xik/1600x900"; */
+
+:root {
+  --main-bg: #1e272e;
+  --main-color: #0097e6;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/* .row{
+    margin: 0;
+}
+.coloum{
+    margin: 0;
+} */
+
+.main_menu {
+  background-color: var(--main-bg);
+}
+.navbar {
+  color: #fff;
+  background-color: var(--main-bg);
+  padding: 2rem 0;
+}
+
+.navbar li a {
+  margin-left: 2rem;
+}
+.navbar a {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.navbar a:hover {
+  color: var(--main-color);
+}
+/* .navbobby{
+    background-color: gray;    
+} */
+
+.fa-snowflake {
+  transition: all linear;
+  animation: rot 1.5s linear infinite;
+  color: var(--main-color);
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.main_header_right {
+  height: 70rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main_header_left p {
+  font-size: 3.5rem;
+}
+
+.main_header_left h1 {
+  font-size: 5rem;
+  margin: 1rem 0 4rem 0;
+  text-transform: capitalize;
+}
+.text_clr {
+  color: var(--main-color);
+  font-size: 7rem;
+}
+.main_header_left button {
+  border: none;
+  padding: 0.8rem 1.8rem;
+  font-size: 3rem;
+  border-radius: 4rem;
+  text-transform: uppercase;
+  box-shadow: 0 10px 10px -4px #000;
+  outline: none;
+}
+
+.main_header_left button:hover {
+  box-shadow: 0 15px 10px -6px var(--main-color);
+}
+
+.main_header_left {
+  height: 70rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+footer {
+  width: 100%;
+  background-color: var(--main-bg);
+  margin-top: auto;
+}
+footer p {
+  margin: 50;
+  text-align: center;
+  color: #fff;
+  line-height: 1.5em;
+  font-size: 5rem;
+}
+
+@media (max-width: 780px) {
+  .main_header_left {
+    height: auto;
+    margin: 5rem 0;
+  }
+
+  .main_header_right {
+    height: auto;
+    margin-top: 3rem;
+  }
+}
+.figure img{
+height: 1cm;
+/* width: 10cm; */
+}
+
+#errr{
+
+  position: relative;
+  left: 38rem;
+}
+
+
+.tempinfo{
+width: 40rem;
+margin: auto;
+min-height: 20rem;
+background-color: #323544;
+border-radius: 2rem;
+padding:2rem ;
+font-family: sans-serif;
+}
+
+
+.top_layer{
+
+  width: 100%;
+  height: 30%;
+  background-color: #2d303d;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 2rem;
+}
+.top_layer p{
+
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 2rem;
+}
+
+.main_layer{
+width: 100%;
+height: 80%;
+display: flex;
+flex-direction: column;
+}
+
+.main_layer #city_name{
+
+  padding: 2rem 0;
+  color: #bfc1c8;
+  font-weight: 300;
+  font-size: 3rem;
+}
+.main_layer .middle_layer{
+
+font-size: 3rem;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+
+.main_layer .middle_layer p
+.main_layer .middle_layer .fa {
+
+  font-size:  10rem;
+  font-weight: 900;
+}
+.fa{
+  color: #009ad8;
+  /* height: 2rem; */
+}
+sup{
+
+  font-size: 6rem;
+  margin-top: -2rem;
+}
+/* .data_hide{
+
+  visibility: hidden;
+  transition: all 0.3s linear;
+} */
+.temp_form{
+  width: 60%;
+  /* position: relative;
+   */
+   position: relative;
+  margin: 5rem auto;
+}
+.temp_form input[type = "text"]{
+
+  width: 100%;
+  padding: 2rem 5rem 2rem 2rem;
+  background: #1e202b;
+  color: white;
+  outline: none;
+  border:  none;
+  font-size: 2rem;
+  border-radius: 3rem;
+}
+::placeholder{
+
+  color: #bfc1c8;
+}
+/* .temp_form input[type="submit"] { */
+  #submitbtn{
+position: absolute;
+top: 5px;
+right: 5px;
+bottom:5px ;
+border: none;
+background:#009ad8 ;
+padding: 0 4rem;
+border-radius: 3rem ;
+  color: white;
+font-size: 2rem;
+}
+
+/* .temp_form input [type="submit"] :hover{
+  color: #009ad8;
+  background-color: #fff;
+} */
+
+.submitbtn:hover{
+background-color: rgb(197, 166, 166);
+color: #009ad8;
+}

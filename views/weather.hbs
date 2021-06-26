@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bobby's Weather</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="pic/simple-elegant-japan-logo-torii-silhouette-traditional-japanese-gate-red-circle-shape-isolated-vector-clip-art-illustration-185868899.jpg" type="image/png">
+</head>
+<body>
+
+    <div class="container-fluid main_menu">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <nav class="navbar navbar-expand-lg ">
+                    
+ <!-- < a class class="navbar-brand" href="#"><i class="fas fa-snowflake fa-2x"  aria-hidden="true"></i>Bobby's weather<i class="fas fa-snowflake fa-2x" aria-hidden="true"></i></a> -->
+
+<a href="#"><i class="fas fa-snowflake fa-2x"  aria-hidden="true"></i>  Bobby's Weather   <i class="fas fa-snowflake fa-2x"  aria-hidden="true"></i>  </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/weather">weather</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="/about">About us</a>
+                          </li>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+    </div>
+<div class=" main_content">
+  {{!-- autocapitalize="off" --}}
+<form class="temp_form" >
+<input type="text" id="citynamee" placeholder="ENTRE YOUR CITY NAME">
+<input type="submit" value="search" id="submitbtn">
+
+  {{!-- <button type="submit" value="searchh" id="submitbtn"></button>   btdfvbnmnb</input> --}}
+</form>
+</div>
+        
+<div class="tempinfo">
+    <div class="top_layer">
+        <p id="day">sunday</p>
+        <p id=" today_date">27 JUN</p>
+    </div>
+
+            <div class="main_layer">
+
+                <p id="city_name"> Get outout here</p>
+                <div class=" middle_layer data_hide">
+                      <p id=" temp"><span>0</span> <sup>0</sup>C</p>
+                      {{!-- <p id="temp_status"><i class="fa fa-cloud" aria-hidden="true"</i></p> --}}
+
+                 </div>
+
+            </div>
+</div>
+
+    <footer>
+      <p>Thanks by BOBBY</p>
+        <!-- <h1></h1> -->
+    </footer>
+{{!-- const Getcurrentday = ()=>{ --}}
+{{!-- let currentTime = new Date ();
+days = weekday[currentTime.getDay()];
+let day = document.getElementById('day;')
+day.innerText = days; --}}
+{{!-- {!-- let weekday = new Array(7); --}} --
+
+    <script src="js/main.js"> </script>
+    <script>
+
+function dayfunc (){
+
+  let CT= new Date ();
+   {{!-- let weekday = new Array(7);
+
+weekday[0]= "sunday" ;
+weekday[1]="monday";
+weekday[2]="tusday";
+weekday[3]="wednesday";
+weekday[4]="thrusday";
+weekday[5]="friday";
+weekday[6]="saturday"; --}}
+
+{{!-- var n = weekday[CT.getDay]; --}}
+var n = (CT.getDay());
+console.log(n);
+
+{{!-- let datee = (CT.getDate());
+document.getElementById('today_date').innerText= datee
+console.log (datee) --}}
+{{!-- document.getElementById('day').innerText = n --}}
+
+};
+console.log(dayfunc());
+
+
+ const bt = new Date;
+let datee = (bt.getDate());
+{{!-- document.getElementById('today_date').innerText= datee --}}
+console.log (datee)
+
+    </script>
+</body>
+</html>
