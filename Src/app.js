@@ -16,7 +16,7 @@ app.get ("" ,(req,res)=>{
 app.get ("/about/" ,(req,res)=>{
     res.render('about.hbs') 
 })
-app.get ("/weather/" ,(req,res)=>{
+app.get ("/weather/" ,(req,res)=>{no
     res.render('weather')
 })
 app.get ("*" ,(req,res)=>{
